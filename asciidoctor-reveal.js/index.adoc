@@ -1,0 +1,22 @@
+= Presentation Title
+Presenter Name
+:doctype: book
+:backend: revealjs
+:revealjs_theme: solarized
+:revealjs_control: false
+
+= Title Slide
+
+== Slide One
+
+* Foo
+* Bar
+* World
+
+== Slide Two
+
+Hello World - Good Bye Cruel World
+
+[NOTE.speaker]
+--
+Actually things aren't that bad

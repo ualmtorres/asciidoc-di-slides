@@ -1,0 +1,83 @@
+include::_settings_reveal.adoc[]
+
+= Slideshow Name
+Author Name
+:encoding: utf-8
+:lang: es
+:numbered:
+:imagesdir: ./images
+:source-highlighter: highlightjs
+
+//// 
+GENERATE THE PRESENTATION WITH THIS COMMAND
+asciidoctor -T asciidoctor-reveal.js/templates/slim/  slide.adoc
+////
+
+== Slide 1 (Basic)
+
+Slide content here
+
+_italic_
+
+*bold*
+
+http://www.google.com[Hyperlink^]
+
+image::di.png[title = "Local images are stored in `images` folder"]
+image::http://asciidoctor.org/images/octocat.jpg[title = "Octocat"]
+
+== Slide 2 (Lists)
+
+Unordered lists
+
+* item 1
+** item 1.2
+* item 2
+
+Ordered lists
+
+. item 1
+.. item 1.1
+. item 2
+
+== Slide 3 (Code)
+
+[source]
+----
+/**
+ * @author John Doe <john.doe@organization.com>
+ * @version 1.0
+*/
+package com.organization.project; // <1>
+
+public class SampleClass {
+	public static void main(String[] args) {
+		System.out.println("Hello");
+    }
+}
+----
+<1> Use a non-default package
+
+== Slide 4 (Tables)
+
+[cols="1,2,3", options="header"] 
+.Numbers in header set the column width
+|===
+|First
+|Second
+|Third
+
+|Item 1
+|Description 1
+|Extended description 1
+
+
+|Item 2
+|Description 2
+|Extended description 2
+|===
+
+== Slide 5 (Videos)
+
+video::2goMtz_vdtM[youtube, width=800, height=500]
+
